@@ -1,0 +1,27 @@
+Iniciando o projeto:
+
+- Abrir repositório no Git
+- Clone na pasta do projeto : git clone https://....
+- npm init => cria o package-json
+- tsc --init => arquivo de configuração tsconfig.json(configuração do typescript)
+- Confituração do tsconfig.json:
+    "target": "es6",
+    "module":"commonjs",
+    "rootDir":"./src"
+    "outDir":"./dist" => caso seja necessario dar o build no projeto
+    "moduleResolution": "node", => descomentar
+- Instalação das dependências:
+    -npm install express mustache-express dotenv
+- Instalação de desenvolvimento:
+    -npm install --dev @types/express @types/mustache-express @type/node
+- Criar a pasta SRC -> criar server.ts 
+- Dependências que devem estar globais: (se não estiverem instalados na máquina)
+    nodemon
+    typescript
+    ts-node
+
+    - npm install -g nodemon typescript ts-node
+- Criar atalhos no package-json: "scripts":{
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
+}
+
