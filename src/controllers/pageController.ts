@@ -31,7 +31,7 @@ export const cats = (req:Request, res:Response) => {
     res.render('pages/page', {
         menu: createMenuObject('cat'),
         banner: {
-            title: 'TGatos',
+            title: 'Gatos',
             background: 'banner_cat.jpg'
         },
         list
